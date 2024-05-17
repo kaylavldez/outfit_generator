@@ -1,0 +1,95 @@
+/* style sheet that handles:
+   - checkerboard background
+   - purple header
+   - white browser background
+   - pink buttons
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+
+    font-family: "Cute Font", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: xx-large;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: #d7d0ea #bcaee4 #bcaee4 #d7d0ea;
+    background-color: #CBC3E3;
+    box-shadow: inset -2px -2px 1px 0 #bcaee4;
+
+    width: 95%;
+    height: 4rem;
+    margin-left: 30px;
+}
+
+.header a, .header h1, .header p {
+    padding: 100px;
+    text-decoration: none;
+    color:#6d5f91;
+}
+
+#temp {
+    color:#574b75;  
+}
+
+.browser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff #dddddd #dddddd #ffffff;
+    background-color: #eeeeee;
+    box-shadow: inset -2px -2px 1px 0 #dddddd;
+}
+
+#main {
+    position: relative;
+    width: 95%;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.mainBtn {
+    padding: 0rem 1.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fac9ec #c76993 #c76993 #fac9ec;
+    background-color: #f6aed1;
+    box-shadow: inset -2px -2px 1px 0 #c76993;
+    color: #c76993;
+    
+    font-family: "Cute Font", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}
+
+footer {
+    position: absolute;
+    font-size: medium;
+    color:#6d5f91;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -10px;
+}

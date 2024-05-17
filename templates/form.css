@@ -1,0 +1,50 @@
+/* style sheet that handles:
+   - login/sign up forms
+   - error message if invalid username/password
+   - links to sign-up or login page
+*/
+
+/****************************** background design ******************************/
+#loginHeader, #signUpHeader {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 49.5%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+#loginBrowser, #signUpBrowser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 400px;
+    margin-top: 85%;
+    margin-left: 49.5%;
+    transform: translate(-50%, -50%);
+    color:#434343;
+}
+
+/******************************* error message *******************************/
+#msg {
+    position: fixed;
+    font-size: xx-large;
+    margin-top: -200px;
+}
+
+/***************************** sign-up/login links *****************************/
+form {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#loginBrowser a, #signUpBrowser a {
+    position: fixed;
+    font-size: x-large;
+    margin-bottom: -325px;
+}

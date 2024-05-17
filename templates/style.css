@@ -1,0 +1,126 @@
+/* style sheet that handles:
+   - save/shuffle buttons
+   - mini browser backgrounds for clothing items
+   - tops/bottoms/shoes/purse images
+*/
+
+/******************************* create buttons *******************************/
+.mainBtn {
+    position: fixed;
+    bottom: 45px;
+}
+
+#shuffle { left: 55px }
+
+#save { right: 55px; }
+
+.button {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+}
+
+#saved {
+    font-size: 20px;
+    position: fixed;
+    bottom: 52px;
+    color: #574b75;
+    display: none;
+    right: 58px;
+}
+
+/******************************* create browsers *******************************/
+#tops {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 190px;
+    height: 210px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bottoms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 190px;
+    height: 210px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#shoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 190px;
+    height: 210px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#purses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 190px;
+    height: 210px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.options {
+    position: absolute;
+    bottom: -5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eeeeee #cccccc #cccccc #eeeeee;
+    background-color: #dddddd;
+    box-shadow: inset -2px -2px 1px 0 #cccccc;
+    height: 40px;
+    width: 100%;
+
+    color:#434343;
+}
+/******************************* create images *******************************/
+.item {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#topsImg {
+    height: 120px;
+    width: auto;
+}
+
+#bottomsImg {
+    width: 120px;  
+    height: auto;
+}
+
+#shoesImg {
+    width: 100px;  
+    height: auto;
+}
+
+#pursesImg {
+    width: 100px;  
+    height: auto;
+}
